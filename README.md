@@ -27,6 +27,20 @@ API responsável pelo cálculo de seguros baseada em regras de estratégia.
 
 ---
 
+## 🧱 Primeiro build do projeto
+
+Para executar o primeiro build do projeto, utilize o Maven.
+Antes de rodar o build, você precisa ter:
+
+- Java 17 instalado
+- Maven instalado (mvn -v para verificar)
+- Projeto clonado localmente
+
+```
+mvn clean install
+```
+---
+
 ## 📥 Endpoint principal
 
 ### POST /insurance

@@ -26,9 +26,8 @@ public class CustomerRequest {
     )
     private String location;
 
-    @NotNull(message = "Vehicle value is required")
     @Positive(message = "Vehicle value must be greater than zero")
-    private double vehicle_value;
+    private Double vehicle_value;
 
     public CustomerRequest() {
     }

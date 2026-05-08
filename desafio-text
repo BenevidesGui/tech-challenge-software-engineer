@@ -1,0 +1,50 @@
+CHALLENGE - SOFTWARE ENGINEER 🚀
+Índice
+Desafio
+Premissas
+Pontos que não iremos avaliar
+Como esperamos receber a solução
+Dúvidas
+1. Introdução
+
+A proposta da aplicação que vamos desenvolver em conjunto é disponibilizar a uma pessoa as modalidades de seguro as quais melhor se encaixam com seu perfil de acordo com algumas variáveis.
+
+Abaixo seguem as regras de negócio relacionadas ao seguro de acordo com o valor do veículo:
+
+Valor do Veículo
+
+% do cálculo
+
+
+Veículo <= 70.000
+
+4%
+
+
+Veículo <= 70.000 e cidade SP
+
+5%
+
+
+Veículo > 70.000 e < 100.000
+
+5.5%
+
+
+Veículo => 100.000
+
+6%
+
+Utilização da aplicação:
+
+A aplicação deve receber como entrada essas informações:
+
+POST -
+input
+{  "customer": {    "name": "João",    "document": "123.456.789-10",    "birthday": "1990-07-10",    "location": "BH",    "vehicle_value": 70000  }}
+Para fins de simplicidade, considere que vamos sempre receber os dados corretos (tipos e formatos)
+
+E deve responder essas informações:
+
+output
+{  "customer": {    "name": "João",    "location": "BH",    "value": 2800  }}

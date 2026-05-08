@@ -22,3 +22,4 @@ class CustomerResponseEntityTest {
         assertEquals(value, response.getValue());
     }
 }
+

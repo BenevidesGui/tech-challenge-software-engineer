@@ -117,5 +117,4 @@ A aplicação segue uma arquitetura em camadas:
 ## 📈 Métricas de Qualidade
 - Cobertura de testes: 100%
 - Logging: Implementado para rastreamento de erros e monitoramento
-- Tratamento de erros: Global com mensagens claras para o cliente
 - Documentação: Completa e atualizada com Swagger

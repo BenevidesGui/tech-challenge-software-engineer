@@ -15,19 +15,19 @@ class CustomerTest {
             "então os valores devem ser retornados corretamente")
     void givenConsumer_whenSetAndGet_thenValuesAreCorrect() {
         Date birthDate = new Date();
-        Customer consumer = new Customer();
+        Customer customer = new Customer();
 
-        consumer.setName("João");
-        consumer.setDocument("123456789");
-        consumer.setBirthDay(birthDate);
-        consumer.setLocation("SP");
-        consumer.setvValue(70000.0);
+        customer.setName("João");
+        customer.setDocument("123456789");
+        customer.setBirthDay(birthDate);
+        customer.setLocation("SP");
+        customer.setvValue(70000.0);
 
-        assertEquals("João", consumer.getName());
-        assertEquals("123456789", consumer.getDocument());
-        assertEquals(birthDate, consumer.getBirthDay());
-        assertEquals("SP", consumer.getLocation());
-        assertEquals(70000.0, consumer.getvValue());
+        assertEquals("João", customer.getName());
+        assertEquals("123456789", customer.getDocument());
+        assertEquals(birthDate, customer.getBirthDay());
+        assertEquals("SP", customer.getLocation());
+        assertEquals(70000.0, customer.getvValue());
     }
 
     @Test
@@ -36,7 +36,7 @@ class CustomerTest {
 
         Date birthDate = new Date();
 
-        Customer consumer = new Customer(
+        Customer customer = new Customer(
                 "João",
                 "123456789",
                 birthDate,
@@ -44,10 +44,10 @@ class CustomerTest {
                 70000.0
         );
 
-        assertEquals("João", consumer.getName());
-        assertEquals("123456789", consumer.getDocument());
-        assertEquals(birthDate, consumer.getBirthDay());
-        assertEquals("SP", consumer.getLocation());
-        assertEquals(70000.0, consumer.getvValue());
+        assertEquals("João", customer.getName());
+        assertEquals("123456789", customer.getDocument());
+        assertEquals(birthDate, customer.getBirthDay());
+        assertEquals("SP", customer.getLocation());
+        assertEquals(70000.0, customer.getvValue());
     }
 }
